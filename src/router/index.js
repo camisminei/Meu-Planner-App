@@ -1,21 +1,29 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Teste from '../views/Teste.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '../views/Home.vue';
+import Teste from '../views/Teste.vue';
+import Calendar from "../views/Calendar.vue";
 
 Vue.use(VueRouter)
 
   const routes = [
-  {
-    path: '/',
-    name: 'Teste',
-    component: Teste
-  },
+    {
+      path: '/',
+      name: 'Home',
+      component: Home,
+    },
+    {
+      path: '/Calendar',
+      name: 'Calendar',
+      component: Calendar,
+    },
   
 ]
 
 const router = new VueRouter({
+  mode: "history",
+  base: process.env.BASE_URL,
   routes
 })
 
-export default router
+export default router;
