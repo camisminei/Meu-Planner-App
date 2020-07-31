@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <v-app id="app">
     <v-navigation-drawer
       v-model="drawer"
       app
@@ -30,7 +30,7 @@
       dark
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-toolbar-title>Planner Week</v-toolbar-title>
+      <v-toolbar-title>Application</v-toolbar-title>
     </v-app-bar>
 
     <v-main>
