@@ -1,7 +1,7 @@
 <template>
   <v-row>
     <v-col>
-      <v-sheet height="650">
+      <v-sheet height="630">
         <v-calendar
           ref="calendar"
           :now="today"
